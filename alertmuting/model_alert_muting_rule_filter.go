@@ -26,6 +26,12 @@ type StringOrArray struct {
 	Values []string
 }
 
+func NewStringOrArray(values ...string) StringOrArray {
+	return StringOrArray{
+		Values: values,
+	}
+}
+
 func (soa *StringOrArray) MarshalJSON() ([]byte, error) {
 	if len(soa.Values) == 1 {
 		return json.Marshal(soa.Values[0])
