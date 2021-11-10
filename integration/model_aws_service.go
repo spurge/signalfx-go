@@ -94,6 +94,7 @@ const (
 	AWSNAT_GATEWAY               AwsService = "AWS/NATGateway"
 	AWSVPN                       AwsService = "AWS/VPN"
 	WAF                          AwsService = "WAF"
+	WAFV2                        AwsService = "AWS/WAFV2"
 	AWSWORK_MAIL                 AwsService = "AWS/WorkMail"
 	AWSWORK_SPACES               AwsService = "AWS/WorkSpaces"
 	AWSNEPTUNE                   AwsService = "AWS/Neptune"
@@ -182,6 +183,7 @@ var AWSServiceNames = map[string]AwsService{
 	"AWS/NATGateway":              AWSNAT_GATEWAY,
 	"AWS/VPN":                     AWSVPN,
 	"WAF":                         WAF,
+	"AWS/WAFV2":                   WAFV2,
 	"AWS/WorkMail":                AWSWORK_MAIL,
 	"AWS/WorkSpaces":              AWSWORK_SPACES,
 	"AWS/Neptune":                 AWSNEPTUNE,
